@@ -1,0 +1,15 @@
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\bin\Debug\net6.0\DevtrackR.Console.exe
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\bin\Debug\net6.0\DevtrackR.Console.deps.json
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\bin\Debug\net6.0\DevtrackR.Console.runtimeconfig.json
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\bin\Debug\net6.0\DevtrackR.Console.dll
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\bin\Debug\net6.0\DevtrackR.Console.pdb
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.csproj.AssemblyReference.cache
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.AssemblyInfoInputs.cache
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.AssemblyInfo.cs
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.csproj.CoreCompileInputs.cache
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.dll
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\refint\DevtrackR.Console.dll
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.pdb
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\DevtrackR.Console.genruntimeconfig.cache
+C:\Users\gabyp\Documents\estudos\dotnet\DevTrackR.Console\obj\Debug\net6.0\ref\DevtrackR.Console.dll
