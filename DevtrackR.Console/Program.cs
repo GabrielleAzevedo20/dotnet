@@ -68,22 +68,102 @@
   // }
 
 
-  var notas = new List<int> { 10, 5, 3, 2, 10, 4, 5, 6, 8, 2 };
+  // var notas = new List<int> { 10, 5, 3, 2, 10, 4, 5, 6, 8, 2 };
 
-  var anyNota1 = notas.Any(n => n == 1);
-  var firstNota10 = notas.First(n => n == 10);
-  var singleNota8 = notas.Single( n => n == 8);
-  var orderNotas = notas.OrderBy(n => n);
-  var max = notas.Max();
-  var min = notas.Min();
-  var sum = notas.Sum();
-  var average = notas.Average();
+  // var anyNota1 = notas.Any(n => n == 1);
+  // var firstNota10 = notas.First(n => n == 10);
+  // var singleNota8 = notas.Single( n => n == 8);
+  // var orderNotas = notas.OrderBy(n => n);
+  // var max = notas.Max();
+  // var min = notas.Min();
+  // var sum = notas.Sum();
+  // var average = notas.Average();
 
-  Console.WriteLine($"Max: {max}");
-  Console.WriteLine($"Min: {min}");
-  Console.WriteLine($"Sum: {sum}");
-  Console.WriteLine($"Average: {average}");
+  // Console.WriteLine($"Max: {max}");
+  // Console.WriteLine($"Min: {min}");
+  // Console.WriteLine($"Sum: {sum}");
+  // Console.WriteLine($"Average: {average}");
 
-  foreach (var nota in orderNotas) {
-    Console.Write(nota + " ");
+  // foreach (var nota in orderNotas) {
+  //   Console.Write(nota + " ");
+  // }
+
+var pacotes = new List<Pacote>();
+
+Console.WriteLine("-------Servico de postagem");
+
+ExibirMensagemPrincipal();
+
+var opcao = Console.ReadLine();
+while (opcao != "0") {
+  switch (opcao) {
+    case "1":
+      var pacote = CadastrarPacote();
+      pacotes.Add(pacote);
+      break;
+    case "2":
+      //AtualizarPacote();
+      break;
+    case "3":
+      //ConsultarPacote();
+      break;
+    default: 
+      Console.WriteLine("Opção Inválida");
+      break;
   }
+}
+
+void ExibirMensagemPrincipal() {
+  Console.WriteLine("Digite o codigo de acordo com o que você quer");
+  Console.WriteLine("- Cadastro de Pacotes");
+  Console.WriteLine("2- Atualizar Pacotes");
+  Console.WriteLine("3- Consultar Pacotes");
+  Console.WriteLine("0- Sair da Aplicação");
+}
+
+void CadastrarPacote() {
+  Console.WriteLine("Digite o título.");
+  var titulo = Console.ReadLine();
+
+  Console.WriteLine("Digite a descrição.");
+  var descricao = Console.ReadLine();
+
+  var pacote = new Pacote(titulo, descricao);
+
+  pacotes.Add(pacote);
+
+  Console.WriteLine($"Pacote com o código {pacote.Codigo} foi cadastrado com sucesso");
+}
+
+public class Pacote {
+    public Pacote(string titulo, string descricao) 
+        {
+          Titulo = titulo;
+          Descricao = descricao;
+          Codigo = GerarCodigo();
+          DataPostagem = DateTime.Now;
+          Status = "Postado.";
+               
+        }
+  
+  private string GerarCodigo() {
+    return Guid.NewGuid().ToString();
+  }
+
+  public void AtualizarStatus(string status) {
+    Status = status;
+  }
+  
+  public string Titulo { get; set; }
+
+  public string Descricao { get; set; }
+
+  public string Codigo { get; set; }
+
+  public DateTime DataPostagem { get; set; }
+
+  public string Status { get; set; }
+
+}
+
+  
